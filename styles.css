@@ -1,0 +1,96 @@
+.h2 {
+    font-size: 100px;
+}
+
+
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Navbar styles */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 1rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+/* Content sections */
+.content {
+    height: 100vh;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 1s ease, opacity 1s ease;
+    opacity: 0;
+    transform: translateY(50px); /* Start elements off-screen */
+}
+
+#section1 {
+    background-image: url("https://blogger.googleusercontent.com/img/a/AVvXsEh4STIHsy7G1S_1t3mUiw8tPYD5iNSGr9zwTkMGbyuNoIk5gagnVMY-fhyYK7JYa6WoHkan76NgyY3BTOBKzeL9CGpfomUhvCKWBFjuMNIguu_9Vy5zqUkvAQ_NjGmSNZvVt-sdFVIjA1NklvhX0X8EM5ImFHKLmiREoqMIa5blT6QirCjgnOqKFaPutV0=w682-h401");
+    color: white;
+    font-size: 100px;
+}
+
+#section2 {
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9QLmkuVLFmkPVEU1J3huWM6Cu2tTeR8N2lR6CttpO55Hnfp1cK1pYoHHiKEkmBfeqnTmsMnfFXa8UeOXn9eTx6IruKfLR-izyR_XJLt45NlrA77t7Q368FxlmpAYdOAruNgApoMcFSISNmhHPUn8K4khJDhy-3_IvpEEtdUZOBdmk14a1pvTciKKNQfE/w562-h487/Screenshot%202024-04-22%20202824.png");
+    color: white;
+    font-size: 100px;
+}
+
+#section3 {
+    background-image: url("https://imageproxyb.ifunny.co/crop:x-20,resize:640x,quality:90x75/images/3dc2c9f916d5091054cf4bc7252fd2e661ca27093611c6c145a84c000ae761c3_1.jpg");
+    color: white;
+    font-size: 100px;
+}
+
+
+
+/* Scroll animations */
+[data-scroll].active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Slide in effect for Section 3 */
+#section3.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#section3 {
+    transform: translateX(100px); /* Slide in from the right */
+}
